@@ -1,4 +1,4 @@
-import { saludar, despedir, estadosistema } from "../src/app.js"
+import { saludar, despedir, estadosistema , sumar } from "../src/app.js"
 
 function ejecutarpruebas() {
     let pasadas = 0;
@@ -22,6 +22,15 @@ function ejecutarpruebas() {
         fallidas++;
     }
     console.log("\nResultados: " + pasadas + " pasadas, " + fallidas + "fallidas");
+ 
     if (fallidas > 0) process.exit(1); "fallidas"
+    const resultadoSuma = sumar(2, 3);
+    if (resultadoSuma === 5) {
+        console.log("test 3: pasado: sumar(2, 3) devuelve 5 en codeRider");
+        pasadas++;
+    } else {
+        console.log("test 3 fallido: sumar(2, 3) devuelve ", resultadoSuma, "en codeRider");
+        fallidas++;
+    }
 }
 ejecutarpruebas();
