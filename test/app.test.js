@@ -5,7 +5,7 @@ function ejecutarpruebas() {
     let fallidas = 0;
 
     const r1 = saludar("Raider")
-    if (r1.includes("raider")) {
+    if (r1.includes("Raider")) {
         console.log("test 1 pasado: funcion saludar en codeRaider es correcta");
         pasadas++;
     } else {
