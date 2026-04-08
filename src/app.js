@@ -14,3 +14,6 @@ export function estadosistema() {
     };
 }
 
+export function sumar(a,b){
+return  a + b;
+}
