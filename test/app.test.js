@@ -1,4 +1,4 @@
-import { saludar, despedir, estadosistema , sumar, restar } from "../src/app.js"
+import { saludar, despedir, estadosistema , sumar, restar, healthCheck } from "../src/app.js"
 
 function ejecutarpruebas() {
     let pasadas = 0;
@@ -38,6 +38,14 @@ function ejecutarpruebas() {
         pasadas++;
     } else {
         console.log("test 4 fallido: restar(5, 3) devuelve ", resultadoResta, "en codeRider");
+        fallidas++;
+    }
+    const health = healthCheck();
+    if (health.status === "ok") {
+        console.log("test healthCheck: pasado");
+        pasadas++;
+    } else {
+        console.log("test healthCheck: fallido", health);
         fallidas++;
     }
     console.log("\nResultados: " + pasadas + " pasadas, " + fallidas + "fallidas");
