@@ -29,9 +29,9 @@
 ---
 
 ## 🚀 Proyectos destacados
-- 🔹 [Nombre del proyecto](link) → Descripción breve  
-- 🔹 [Nombre del proyecto](link) → Descripción breve  
-- 🔹 [Nombre del proyecto](link) → Descripción breve  
+- 🔹 [Nombre del proyecto](link) → Descripción  
+- 🔹 [Nombre del proyecto](link) → Descripción   
+- 🔹 [Nombre del proyecto](link) → Descripción  
 
 ---
 
