@@ -29,3 +29,16 @@ export function healthCheck() {
         version: "1.0.0"
     };
 }
+export function factorial(n) {
+    if (n < 0) {
+        return "No existe factorial para números negativos";
+    }
+
+    let resultado = 1;
+
+    for (let i = 1; i <= n; i++) {
+        resultado *= i;
+    }
+
+    return resultado;
+}
